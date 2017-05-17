@@ -1,7 +1,9 @@
-package domain;
+package entity;
 
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import java.io.Serializable;
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 /**
@@ -9,13 +11,13 @@ import java.util.Set;
  */
 public class Role implements Serializable {
 
+    @Id
     private String id;
 
     private String name;
 
-    private String message;
-
-    private Set<Permission> permissions = new HashSet<>();
+    @ManyToMany
+    private Set<Permission> permissions = new LinkedHashSet<>();
 
 
     public String getId() {
@@ -32,14 +34,6 @@ public class Role implements Serializable {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
     }
 
     public Set<Permission> getPermissions() {

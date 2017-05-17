@@ -1,6 +1,6 @@
 package service;
 
-import domain.User;
+import entity.User;
 import dto.UserDto;
 import tools.CodeUtils;
 

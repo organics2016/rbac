@@ -1,18 +1,24 @@
-package domain;
+package entity;
 
 import dto.UserDto;
 import tools.CodeUtils;
 
-import java.io.Serializable;
-import java.util.HashSet;
+import javax.persistence.*;
+import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.UUID;
 
 /**
  * Created by 王汗超 on 2017/4/30.
  */
-public class User implements Serializable {
 
+@Entity
+@Table(indexes = {
+        @Index(name = "t_user_username", columnList = "username", unique = true)
+})
+public class User extends BaseEntity {
+
+    @Id
     private String id;
 
     private String username;
@@ -21,8 +27,8 @@ public class User implements Serializable {
 
     private String salt;
 
-    private Set<Role> roles = new HashSet<>();
-
+    @ManyToMany
+    private Set<Role> roles = new LinkedHashSet<>();
 
     public User createUser(UserDto dto) {
 
