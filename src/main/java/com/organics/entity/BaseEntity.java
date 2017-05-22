@@ -1,4 +1,4 @@
-package entity;
+package com.organics.entity;
 
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;

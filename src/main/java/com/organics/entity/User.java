@@ -1,7 +1,7 @@
-package entity;
+package com.organics.entity;
 
-import dto.UserDto;
-import tools.CodeUtils;
+import com.organics.dto.UserDto;
+import com.organics.tools.CodeUtils;
 
 import javax.persistence.*;
 import java.util.LinkedHashSet;

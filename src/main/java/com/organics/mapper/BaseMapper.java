@@ -1,4 +1,4 @@
-package mapper;
+package com.organics.mapper;
 
 import org.mapstruct.Mapper;
 

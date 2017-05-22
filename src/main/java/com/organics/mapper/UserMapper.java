@@ -1,7 +1,7 @@
-package mapper;
+package com.organics.mapper;
 
-import dto.UserDto;
-import entity.User;
+import com.organics.dto.UserDto;
+import com.organics.entity.User;
 
 /**
  * Created by 王汗超 on 2017/5/17.

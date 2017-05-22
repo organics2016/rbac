@@ -1,4 +1,4 @@
-package entity;
+package com.organics.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

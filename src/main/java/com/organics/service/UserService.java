@@ -1,8 +1,8 @@
-package service;
+package com.organics.service;
 
-import entity.User;
-import dto.UserDto;
-import tools.CodeUtils;
+import com.organics.entity.User;
+import com.organics.dto.UserDto;
+import com.organics.tools.CodeUtils;
 
 import java.util.UUID;
 

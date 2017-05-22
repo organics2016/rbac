@@ -1,4 +1,4 @@
-package entity;
+package com.organics.entity;
 
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
